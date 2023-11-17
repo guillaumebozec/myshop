@@ -13,6 +13,7 @@
 ### Prerequisites
 
 - Docker and Docker Compose
+You need to clone the repo with https://github.com/guillaumebozec/myshop.git
 
 ### Installation
 
