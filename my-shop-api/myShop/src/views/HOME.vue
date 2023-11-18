@@ -1,5 +1,5 @@
-<template>
-  <div class="w-[1728px] h-[1117px] px-[641px] py-[407px] bg-neutral-600 flex-col justify-center items-center gap-2.5 inline-flex">
+<template v-autofocus>
+  <div class="w-[1280px] h-[720px] px-[641px] py-[407px] bg-neutral-600 flex-col justify-center items-center gap-2.5 inline-flex">
   <div class="flex-col justify-center items-center gap-10 flex">
     <div class="h-[131.57px] pb-[4.46px] flex-col justify-start items-start gap-[22.21px] flex">
       <div class="text-neutral-300 text-[26.76px] font-black font-['Arial Black']">EMAIL</div>

@@ -1,28 +1,27 @@
 <template>
     <section>
         <header>
-                 <div class="w-[1579px] h-[281.27px] relative">
-  <div class="w-[1579px] left-0 top-0 absolute justify-end items-center gap-[30px] inline-flex">
-    <img class="w-[230px] h-[146.83px]" src="../../png-clipart-blue-triangle-logo-trademark-circle-coming-soon-purple-blue-removebg-preview.png" />
+                 <div class="w-[1280px] h-[200px] relative">
+  <div class="w-[1280px] left-0 top-0 absolute justify-end items-center gap-[30px] inline-flex">
+    <img class="w-[230px] h-[146.83px]" src="../../png-clipart-blue-triangle-logo-trademark-circle-coming-soon-purple-blue-removebg-preview.png" alt="MyShop Logo"/>
     <div class="flex">
-        <img class="w-16 h-16" src="../../1410285.png" />
-    <input class="w-[1000px] h-20 pl-[19.50px] pr-[1005.50px] pt-[7.58px] pb-[8.42px] bg-white rounded-[80px] justify-start items-center flex">
-      
+        <img class="w-16 h-16" src="../../1410285.png" alt="Search icon"/>
+    <input class="w-[1000px] h-[px] pl-[19.50px] pt-[7.58px] pb-[8.42px] bg-white rounded-[80px] justify-start items-center flex">
     </div>
     <div class="w-[200px] h-[70px] px-[31px] py-[17px] bg-zinc-300 rounded-[50px] justify-center items-center gap-2.5 flex">
-      <div class="text-black text-3xl font-black font-['Arial Black']"><button v-on:click="backlogin()">LOGIN</button></div>
+      <div class="text-black text-xl font-black font-['Arial Black']"><button v-on:click="backlogin()">LOGIN</button></div>
     </div>
   </div>
-  <div class="left-[48.50px] top-[122px] absolute text-white text-4xl font-black font-['Arial Black']">ADMIN</div>
-  <div class="w-[613px] h-[112.27px] left-[482.50px] top-[169px] absolute justify-center items-start gap-[27.66px] inline-flex">
-    <div class="grow shrink basis-0 self-stretch pl-[51.25px] pr-[37.83px] pt-[38.64px] pb-[44.63px] bg-violet-400 rounded-[20.34px] justify-end items-center inline-flex">
-        <a v-on:click="getItems()"><div class="w-[96.81px] text-black text-xl font-black font-['Arial Black']">Product</div></a>
+  <div class="left-[-100px] top-[122px] absolute text-white text-4xl font-black font-['Arial Black']">ADMIN</div>
+  <div class="w-[613px] h-[50px] left-[325px] top-[120px] absolute justify-center items-start gap-[27.66px] inline-flex">
+    <div class="grow shrink basis-0 self-stretch pl-[51.25px] pr-[37.83px]  bg-violet-400 rounded-[20.34px] justify-end items-center inline-flex">
+        <a v-on:click="getItems()"><div class="w-[96.81px] ml-[-15px]  text-black text-xl font-black font-['Arial Black']">Product</div></a>
     </div>
     <div class="grow shrink basis-0 self-stretch pl-[30.51px] pr-[30.10px] bg-sky-300 rounded-[20.34px] justify-center items-center inline-flex">
         <a v-on:click="getCategories()"><div class="w-[125.28px] h-[28.88px] text-black text-xl font-black font-['Arial Black']">Categories</div></a>
     </div>
-    <div class="grow shrink basis-0 self-stretch px-[58.98px] pt-[37.42px] pb-[37.83px] bg-violet-400 rounded-[20.34px] justify-center items-center inline-flex">
-        <a v-on:click="getUsers()"><div class="w-[67.93px] h-[37.02px] text-black text-xl font-black font-['Arial Black']">Users</div></a>
+    <div class="grow shrink basis-0 self-stretch px-[58.98px]  bg-violet-400 rounded-[20.34px] justify-center items-center inline-flex">
+        <a v-on:click="getUsers()"><div class="w-[67.93px] h-[37.02px]  mt-[10px] text-black text-xl font-black font-['Arial Black']">Users</div></a>
     </div>
   </div>
 </div>
@@ -34,54 +33,54 @@
             <section class="all" v-if="status==='done'">
         <article class="colonne">
             <section class="ligne">
-                <div class="w-[1526px] h-[125px] justify-end items-center gap-[90px] inline-flex">
-  <div class="w-[1156.07px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Name</div>
+                <div class="w-[1280px] h-[auto] justify-center items-center gap-[90px] inline-flex">
+  <div class="w-[900px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Name</div>
+    </div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">ID</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">ID</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">Category</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Category</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Price</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Price</div>
+    <div class="w-[220px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Description</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Description</div>
-    </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Action</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Action</div>
     </div>
   </div>
   <div class="w-[237px] self-stretch px-[31px] py-[25px] bg-sky-300 rounded-[36px] justify-center items-center gap-2.5 flex">
-    <div class="text-white text-4xl font-black font-['Arial Black']"><button v-on:click="additem()">Add New</button></div>
+    <div class="text-white text-xl font-black font-['Arial Black']"><button v-on:click="additem()">Add New</button></div>
   </div>
 </div>
             </section>
       </article>
       <article v-for="item in mydata['hydra:member']" :key="item.id" class="colonne">
         <section class="ligne">
-            <div class="w-[1526px] h-[125px] pl-[40px] justify-start items-center gap-[90px] inline-flex">
-  <div class="w-[1156.07px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
-    <div class="w-[190px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{item.name}}</div>
+            <div class="w-[1280px] pt-[20px] pl-[20px] justify-start items-center gap-[90px] inline-flex">
+  <div class="w-[900px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{item.name}}</div>
+    </div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{ item.id }}</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{ item.id }}</div>
+      <div class=" text-black text-xl font-black font-['Arial Black']">{{ item.categories }}</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class=" text-black text-2xl font-black font-['Arial Black']">{{ item.categories }}</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{item.price}}</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{item.price}}</div>
-    </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{item.description}}</div>
+    <div class="w-[220px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{item.description}}</div>
     </div>
     <div class="px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">
+      <div class="text-black text-xl font-black font-['Arial Black']">
         <button v-on:click="edititems(item.name,item.id,item.categories.toString(),item.price.toString(),item.description)">Edit</button>
         <button  v-on:click="deleteitems(item.id)">Delete</button>
       </div>
@@ -96,42 +95,42 @@
     <section class="all" v-if="status==='done1'">
       <article class="colonne">
             <section class="ligne">
-                <div class="w-[1526px] h-[125px] justify-start items-center gap-[90px] inline-flex">
+                <div class="w-[1280px] h-[auto] justify-center items-center gap-[90px] inline-flex">
   <div class="w-[900px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Name</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">Name</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">ID</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">ID</div>
+    </div>
+    <div class="w-[250px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Products</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Products</div>
-    </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Action</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">Action</div>
     </div>
   </div>
   <div class="w-[237px] self-stretch px-[31px] py-[25px] bg-sky-300 rounded-[36px] justify-center items-center gap-2.5 flex">
-    <div class="text-white text-4xl font-black font-['Arial Black']"><button v-on:click="addcat()">Add New</button></div>
+    <div class="text-white text-xl font-black font-['Arial Black']"><button v-on:click="addcat()">Add New</button></div>
   </div>
 </div>
             </section>
       </article>
       <article v-for="item in mydata['hydra:member']" :key="item.id" class="colonne">
         <section class="ligne">
-            <div class="w-[1526px] h-[125px]  justify-start items-center gap-[90px] inline-flex">
-  <div class="w-[900px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
-    <div class="w-[190px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{item.name}}</div>
+            <div class="w-[1280px] pt-[20px] pl-[20px] justify-start items-center gap-[90px] inline-flex">
+  <div class="w-[900px] px-[35.64px] py-[7.13px]  bg-violet-400 rounded-[36px] justify-center items-center gap-[7.13px] flex">
+    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{item.name}}</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{ item.id }}</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">{{ item.id }}</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class=" text-black text-2xl font-black font-['Arial Black']">{{ item.products }}</div>
+    <div class="w-[250px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class=" text-black text-xl font-black font-['Arial Black']">{{ item.products }}</div>
     </div>
     <div class="px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">
+      <div class="text-black text-xl font-black font-['Arial Black']">
         <button v-on:click="editcat(item.name,item.id,item.products.toString())">Edit</button>
         <button v-on:click="deletecat(item.id)">Delete</button>
       </div>
@@ -147,48 +146,48 @@
       <section class="all" v-if="status==='ok'">
         <article class="colonne">
             <section class="ligne">
-                <div class="w-[1526px] h-[125px] justify-start items-center gap-[90px] inline-flex">
-  <div class="w-[1050px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Full Name</div>
+                <div class="w-[1280px] h-[auto] justify-center items-center gap-[90px] inline-flex">
+  <div class="w-[900px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
+    <div class="w-[250px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Full Name</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">ID</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">ID</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Role</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Role</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Email</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Email</div>
     </div>
-    <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">Action</div>
+    <div class="w-[150px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">Action</div>
     </div>
   </div>
   <div class="w-[237px] self-stretch px-[31px] py-[25px] bg-sky-300 rounded-[36px] justify-center items-center gap-2.5 flex">
-    <div class="text-white text-4xl font-black font-['Arial Black']"><button v-on:click="adduser()">Add New</button></div>
+    <div class="text-white text-xl font-black font-['Arial Black']"><button v-on:click="adduser()">Add New</button></div>
   </div>
 </div>
             </section>
       </article>
       <article v-for="user in mydatas['hydra:member']" :key="user.id" class="colonne">
         <section class="ligne">
-            <div class="w-[1526px] h-[125px] justify-start items-center gap-[90px] inline-flex">
-  <div class="w-[1050px] px-[35.64px] py-[7.13px] bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
-    <div class="w-[190px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{user.fullName}}</div>
+            <div class="w-[1280px] pt-[20px] pl-[20px] justify-start items-center gap-[90px] inline-flex">
+  <div class="w-[900px] px-[35.64px] py-[7.13px]  bg-violet-400 rounded-[36px] justify-start items-center gap-[7.13px] flex">
+    <div class="w-[250px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
+      <div class="text-black text-xl font-black font-['Arial Black']">{{user.fullName}}</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-2xl font-black font-['Arial Black']">{{ user.id }}</div>
+      <div class="text-black text-xl font-black font-['Arial Black']">{{ user.id }}</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class=" text-black text-2xl font-black font-['Arial Black']">{{ user.roles }}</div>
+      <div class=" text-black text-xl font-black font-['Arial Black']">{{ user.roles }}</div>
     </div>
     <div class="w-[200px] px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <p class="text-black text-2xl font-black font-['Arial Black']">{{user.email}}</p>
+      <p class="text-black text-xl font-black font-['Arial Black']">{{user.email}}</p>
     </div>
     <div class="px-[22.10px] py-[6.41px] bg-white rounded-[21.38px] justify-center items-center gap-[7.13px] flex">
-      <div class="text-black text-4xl font-black font-['Arial Black']">
+      <div class="text-black text-xl font-black font-['Arial Black']">
         <button v-on:click="edituser(user.fullName,user.email,user.id)">Edit</button>
         <button  v-on:click="deleteuser(user.id)">Delete</button>
       </div>
@@ -378,6 +377,7 @@ async getUsers() {
     *{
         margin:0;
         padding: 0;
+        word-break: break-all
     }
     body{
         background-color: white;
